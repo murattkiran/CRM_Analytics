@@ -1,4 +1,4 @@
-#RFM ANALYSIS FOR CUSTOMER SEGMENTATION AND CLTV PREDICTION
+**RFM ANALYSIS FOR CUSTOMER SEGMENTATION AND CLTV PREDICTION**
 
 This project aims to segment customers of FLO, one of the largest shoe companies in Turkey, and determine marketing strategies based on these segments. The project will utilize RFM analysis for customer segmentation and BG-NBD and Gamma-Gamma models for Customer Lifetime Value (CLTV) prediction.
 Dataset
@@ -18,6 +18,6 @@ The dataset used for this project consists of historical shopping behavior of cu
     customer_value_total_ever_online: Total amount spent by the customer in online purchases
     interested_in_categories_12: List of categories in which the customer made purchases in the last 12 months
 
-#Business Problem
+**Business Problem**
 
 FLO aims to segment its customers and determine marketing strategies based on these segments. The goal of this project is to define customer behaviors and create groups based on these behavioral patterns. Customized offers will be provided to customers based on these segments, and Customer Lifetime Value (CLTV) predictions will be made.
