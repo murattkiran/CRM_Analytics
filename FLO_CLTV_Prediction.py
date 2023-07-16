@@ -28,9 +28,6 @@ df.describe([0.01, 0.05, 0.1, 0.25, 0.50, 0.75, 0.90, 0.95, 0.99]).T
 
 #Define the outlier_thresholds and replace_with_thresholds functions required to suppress outliers
 def outlier_thresholds(dataframe, variable):
-    # quartile1 ve quartile3 değerlerinin ön tanımlı değeri 0.25 / 0.75 tir.
-    # Ancak biz aykırı değerleri sadece ucundan traşlamak istiyoruz.
-    # Bu sayede gereksiz veri kaybının önüne geçmiş oluyoruz.
     quartile1 = dataframe[variable].quantile(0.05)
     quartile3 = dataframe[variable].quantile(0.95)
     interquantile_range = quartile3 - quartile1
@@ -92,8 +89,6 @@ cltv_df = pd.DataFrame({"customer_id": df["master_id"],
                         "T_weekly": ((analysis_date - df["first_order_date"]).dt.days)/7,
                         "frequency": df["total_number_of_purchases"],
                         "monetary_cltv_avg": df["total_price"] / df["total_number_of_purchases"]})
-
-
 
 
 
