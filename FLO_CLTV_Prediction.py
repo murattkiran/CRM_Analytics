@@ -138,8 +138,8 @@ cltv_df["cltv"] = ggf.customer_lifetime_value(bgf,
                                    cltv_df["recency_cltv_weekly"],
                                    cltv_df["T_weekly"],
                                    cltv_df["monetary_cltv_avg"],
-                                   time=6,    # 6 aylık
-                                   freq="W",  # T'nin frekans bilgisi.
+                                   time=6,    
+                                   freq="W",  
                                    discount_rate=0.01)
 
 
